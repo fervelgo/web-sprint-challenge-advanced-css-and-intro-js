@@ -362,13 +362,16 @@ Create a function called `randomize` that takes a data array as an argument and 
 
 function randomize(array){
   array = array.sort(() => Math.random() - 0.5)
+  return array
   }
 
 
  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
  Use advanced array methods (.map, .reduce, .filter) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 
- 
+ let bornPost1900 = artists.filter(artists => artists.nationality === "Dutch")
+
+ console.log(bornPost1900);
  
  
  /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
