@@ -253,10 +253,10 @@ function get20s(array){
       array20s.push(array[i].name)
     }
   }
-  console.log(array20s);
+  return array20s;
 }
 
-get20s(artists);
+get20s(artists)
 
 
 
